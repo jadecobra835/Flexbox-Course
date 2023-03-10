@@ -1,0 +1,115 @@
+@media (max-width: 615px) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        margin: 0px;
+    }
+    
+    .container {
+        background-color: #415068;
+        width: 100%;
+        height: 50px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    .menu-container {
+        width: 60px;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .menu {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .button {
+        height: 100%;
+        width: 100%;
+        color: rgba(0, 0, 0, 0); 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        visibility:hidden;
+    }
+
+    .button:hover {
+        cursor: pointer;
+    }
+
+    .button span {
+        color: black;
+        visibility:visible;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .branding{
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-basis: 100px;
+    }
+    
+    .branding a{
+        color: white;
+        text-decoration: none;
+        font-family: 'Open Sans', sans-serif;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .branding:hover {
+        cursor: pointer;
+    }
+    
+    /* Working on the area below this */
+
+    .link {
+        width: 0px;
+        height: 0px;
+        
+    }
+    
+    .link:hover {
+        visibility: hidden;
+    }
+    
+    .link a  { 
+        width: 0px;
+        height: 0px;
+        visibility: hidden;
+    }
+    
+    .link a:hover {
+        visibility: hidden;
+    }
+    
+    .link-section-1 {
+        width: 0px;
+        height: 0px;
+    }
+    
+    .divider {
+        width: 0px;
+        height: 0px;
+    }
+    
+    .link-section-2 {
+        height: 0px;
+        width: 0px;
+    }
+}
