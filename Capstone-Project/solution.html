@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang='en'>
-
+<html lang="en">
 <head>
-    <meta charset='UTF-8'>
-    <title>Solution</title>
+    <meta charset="UTF-8">
+    <title>Capstone Solution</title>
 
+    <!-- Oxygen Font -->
     <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
+    <!-- Font Awesome -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ"
         crossorigin="anonymous"></script>
 
@@ -13,19 +14,24 @@
         html {
             font-family: 'Oxygen', sans-serif;
         }
+
         body {
             margin: 0px;
         }
+
         .navbar {
             background: #415068;
         }
+
         .navbar div {
             display: none;
         }
+
         .navbar .toggle,
         .navbar .brand {
             display: inline-block;
         }
+
         .navbar .link {
             display: block;
             text-align: center;
@@ -34,56 +40,68 @@
             background: #223047;
             color: white;
         }
+
         .navbar .link:hover,
         .navbar .link:active {
             color: #223047;
             background: white;
         }
+
         .navbar .brand {
             width: 10em;
             text-align: center;
             padding: 1em;
             color: white;
         }
+
         .navbar a {
             text-decoration: none;
         }
+
         .navbar .toggle {
             padding: 1em;
             color: black;
         }
+
         @media (min-width: 48em) {
             .navbar {
                 display: flex;
             }
+
+            .navbar div {
+                display: flex;
+            }
+
             .navbar .left,
             .navbar .right {
                 display: flex;
                 flex: 1;
             }
+
             .navbar .link {
                 width: auto;
             }
+
             .navbar .right {
                 justify-content: flex-end;
             }
+
             .navbar .toggle {
                 display: none;
             }
         }
-        @media (min-width: 48em) {
-            .navbar div {
-                display: flex;
-            }
-        }
+
         @media (max-width: 48em) {
+            /* If it has .active in it, it is part of the dropdown */
             .navbar.active .toggle {
                 background: #223047;
                 color: white;
             }
+
             .navbar .brand {
                 text-align: left;
             }
+
             .navbar.active div {
                 display: block;
             }
@@ -97,15 +115,19 @@
             <i class="fas fa-bars"></i>
         </a>
         <a href="#" class="brand">MyName</a>
+
         <div class="left">
             <a href="#" class="link">Link 1</a>
             <a href="#" class="link">Link 2</a>
         </div>
+
         <div class="right">
             <a href="#" class="link">Link 3</a>
         </div>
     </div>
 </body>
+
+<!-- Javascript Code for the Dropdown -->
 
 <script>
     const navHamburger = document.querySelector('#navHamburger');
